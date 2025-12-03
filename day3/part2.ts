@@ -20,7 +20,6 @@ for (const line of lines) {
     }
     joltage += nums[largest];
   }
-
   result += +joltage;
 }
 

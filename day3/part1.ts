@@ -15,17 +15,16 @@ for (const line of lines) {
   }
   joltage += nums[largestIndex];
 
-  const left = nums.slice(largestIndex + 1);
+  const part = nums.slice(largestIndex + 1);
   largestIndex = 0;
-  for (let i = 0; i < left.length; i++) {
-    if (+left[i]! > +left[largestIndex]!) {
+  for (let i = 0; i < part.length; i++) {
+    if (+part[i]! > +part[largestIndex]!) {
       largestIndex = i;
     }
   }
-  joltage += left[largestIndex];
 
+  joltage += part[largestIndex];
   result += +joltage;
-  console.log(joltage, line, left.join(""));
 }
 
 console.log(result);
