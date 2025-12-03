@@ -5,8 +5,8 @@ const ranges = input.trim().split(",");
 
 let result = 0;
 for (const range of ranges) {
-  const start = +range.split("-")[0]!;
-  const end = +range.split("-")[1]!;
+  const start = +range.split("-")[0];
+  const end = +range.split("-")[1];
 
   for (let i = start; i <= end; i++) {
     const id = i.toString();
