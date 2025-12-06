@@ -19,8 +19,7 @@ for (let x = 0; x < lines.length; x++) {
     ) {
       lines[x] = null;
       break;
-    }
-    if (
+    } else if (
       rangeX[0] >= rangeY[0] &&
       rangeX[0] <= rangeY[1] &&
       rangeX[1] > rangeY[1]
@@ -29,8 +28,7 @@ for (let x = 0; x < lines.length; x++) {
       lines[x] = null;
       lines[y] = null;
       break;
-    }
-    if (
+    } else if (
       rangeX[0] < rangeY[0] &&
       rangeX[1] <= rangeY[1] &&
       rangeX[1] >= rangeY[0]
