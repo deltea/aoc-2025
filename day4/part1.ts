@@ -3,16 +3,7 @@ import { readFileSync } from "fs";
 const input = readFileSync("day4/input.txt", "utf-8");
 const lines = input.split("\n").filter(Boolean);
 let result = 0;
-const dirs = [
-  [1, 0],
-  [-1, 0],
-  [0, 1],
-  [0, -1],
-  [1, 1],
-  [-1, -1],
-  [1, -1],
-  [-1, 1]
-]
+const dirs = [[1, 0], [-1, 0], [0, 1], [0, -1], [1, 1], [-1, -1], [1, -1], [-1, 1]];
 
 for (let row = 0; row < lines.length; row++) {
   for (let col = 0; col < lines[row].length; col++) {
