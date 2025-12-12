@@ -31,7 +31,7 @@ longest.reverse();
 longest.sort((a, b) => getDistance(lines[b[0]], lines[b[1]]) - getDistance(lines[a[0]], lines[a[1]]));
 // console.log(longest.map(l => [lines[l[0]], lines[l[1]]]));
 
-// const dims = [97580, 50120];
+// const dims = [100_000, 100_000];
 const dims = [15, 10]
 let grid = Array.from({ length: dims[1] }, () => new Array(dims[0]).fill("."));
 
